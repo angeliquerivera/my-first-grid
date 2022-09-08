@@ -1,0 +1,36 @@
+.container {
+  background-color: dodgerblue;
+
+  /* margin: <top-bottom val> <left-right val> */
+  margin: 0 auto;
+}
+
+/* Managing the container's width at different screen widths */
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Each container from desktop up will have at least a 32px left &right & margin */
+
+/* Container width between desktop and widescreen widths */
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .container {
+    max-width: calc(var(--desktop) - 2 * var(--gap));
+  }
+}
+
+/* Container width between widescreen and fullhd widths */
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .container {
+    max-width: calc(var(--widescreen) - 2 * var(--gap));
+  }
+}
+
+/* Container width for greater than fullhd widths */
+@media screen and (min-width: 1408px) {
+  .container {
+    max-width: calc(var(--fullhd) - 2 * var(--gap));
+  }
+}
