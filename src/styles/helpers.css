@@ -1,0 +1,16 @@
+.code-wrapper {
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
+
+  /* gap: <row-gap> <column-gap> */
+  /* row-gap: 2rem;
+  column-gap: 1rem; */
+  /* gap: 2rem 1rem; */
+}
+
+.code-wrapper > * {
+  background-color: darkgreen;
+}
+
+.single-code-block {
+}

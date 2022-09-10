@@ -1,0 +1,13 @@
+.example {
+  margin: 3rem 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.true-center {
+  height: 10rem;
+  place-items: center;
+  font-size: 3rem;
+}
