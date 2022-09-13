@@ -11,3 +11,27 @@
   place-items: center;
   font-size: 3rem;
 }
+
+.tic-tac-toe {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.tic-tac-toe div {
+  background-color: darkred;
+  height: 200px;
+
+  display: grid;
+  place-items: center;
+}
+
+.mixed-columns {
+  grid-template-columns: 100px 15% repeat(3, 1fr) 2fr;
+  gap: 1rem;
+}
+
+.mixed-columns div {
+  background-color: darkslategray;
+  height: 100px;
+}

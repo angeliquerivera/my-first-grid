@@ -1,3 +1,11 @@
 export default function CodeWrapper({ sections, children }) {
-  return <article className="grid code-wrapper">{children}</article>;
+  const styling = {
+    gridTemplateColumns: `repeat(${sections}, 1fr)`,
+  };
+
+  return (
+    <article className="grid code-wrapper" style={styling}>
+      {children}
+    </article>
+  );
 }
