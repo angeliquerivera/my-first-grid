@@ -4,7 +4,7 @@ export default function CodeWrapper({ sections, children }) {
   };
 
   return (
-    <article className="grid code-wrapper" style={styling}>
+    <article className="code-wrapper" style={styling}>
       {children}
     </article>
   );

@@ -1,18 +1,24 @@
-.example {
-  margin: 3rem 0;
+/* p {
+  background-color: darkmagenta;
 }
 
-.grid {
-  display: grid;
+h1 + p {
+  background-color: aqua;
 }
+
+p ~ p {
+  background-color: darkorange;
+} */
 
 .true-center {
+  display: grid;
   height: 10rem;
   place-items: center;
   font-size: 3rem;
 }
 
 .tic-tac-toe {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
@@ -27,11 +33,14 @@
 }
 
 .mixed-columns {
-  grid-template-columns: 100px 15% repeat(3, 1fr) 2fr;
+  display: grid;
+  grid-template-columns: 100px 25% 1fr 2fr;
   gap: 1rem;
 }
 
 .mixed-columns div {
+  display: grid;
+  place-items: center;
   background-color: darkslategray;
   height: 100px;
 }
