@@ -14,7 +14,12 @@ export const pancake_jsx = `<section className="container">
 </article>
 </section>`;
 
-export const pancake_css = `.pancake > * {
+export const pancake_css = `.pancake {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.pancake > * {
   padding: 0.5rem;
 }
 

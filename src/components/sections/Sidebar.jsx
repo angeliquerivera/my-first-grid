@@ -75,7 +75,7 @@ export default function Sidebar() {
           <HighlightedCode
             exampleCode={sidebar_css}
             codeLang={"css"}
-            codeLabel="Sidebar.css"
+            codeLabel="sidebar.css"
           />
         </CodeWrapper>
       </section>
