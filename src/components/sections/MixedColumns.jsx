@@ -2,22 +2,26 @@ import CodeWrapper from "../helpers/CodeWrapper";
 import HighlightedCode from "../helpers/HighlightedCode";
 
 import {
-  mixedSizing_jsx,
-  mixedSizing_css,
+  mixedColumns_jsx,
+  mixedColumns_css,
 } from "../../sample-code/ex-mixed-sizing";
 
 export default function MixedColumns() {
   return (
-    <>
-      <h2>Mixed Column Sizing</h2>
+    <article>
+      <header className="container">
+        <h2>Mixed Column Sizing</h2>
+      </header>
+
       <section className="container">
-        <div className="mixed-columns">
+        <div className="mixed-columns example">
           <div>100px</div>
           <div>25%</div>
           <div>1fr</div>
           <div>2fr</div>
         </div>
       </section>
+
       <section className="container">
         <p>
           fr is calculated based on the remaining space when combined with other
@@ -33,17 +37,17 @@ export default function MixedColumns() {
       <section className="container">
         <CodeWrapper sections={2}>
           <HighlightedCode
-            exampleCode={mixedSizing_jsx}
+            exampleCode={mixedColumns_jsx}
             codeLang={"jsx"}
-            codeLabel={"mixedSizing.jsx"}
+            codeLabel={"MixedColumns.jsx"}
           />
           <HighlightedCode
-            exampleCode={mixedSizing_css}
+            exampleCode={mixedColumns_css}
             codeLang={"css"}
-            codeLabel={"mixedSizing.css"}
+            codeLabel={"mixedColumns.css"}
           />
         </CodeWrapper>
       </section>
-    </>
+    </article>
   );
 }

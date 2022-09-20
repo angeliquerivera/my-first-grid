@@ -5,10 +5,13 @@ import { eggplant_jsx, eggplant_css } from "../../sample-code/ex-eggplant";
 
 export default function Eggplant() {
   return (
-    <>
-      <h2>True Centering an Eggplant</h2>
+    <article>
+      <header className="container">
+        <h2>True Centering an Eggplant</h2>
+      </header>
+
       <section className="container">
-        <div className="true-center">🍆</div>
+        <div className="true-center example">🍆</div>
       </section>
 
       <section className="container">
@@ -25,6 +28,6 @@ export default function Eggplant() {
           />
         </CodeWrapper>
       </section>
-    </>
+    </article>
   );
 }

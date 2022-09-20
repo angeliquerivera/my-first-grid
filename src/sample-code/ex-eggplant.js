@@ -4,7 +4,7 @@ export const eggplant_jsx = `<section className="true-center">
 
 export const eggplant_css = `.true-center {
   display: grid;
-  height: 10rem;
   place-items: center;
+  height: 10rem;
   font-size: 3rem;
 }`;

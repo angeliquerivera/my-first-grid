@@ -5,10 +5,13 @@ import { ticTacToe_jsx, ticTacToe_css } from "../../sample-code/ex-tic-tac-toe";
 
 export default function TicTacToe() {
   return (
-    <>
-      <h2>Tic-Tac-Toe Board</h2>
+    <article>
+      <header className="container">
+        <h2>Tic-Tac-Toe Board</h2>
+      </header>
+
       <section className="container">
-        <div className="tic-tac-toe">
+        <div className="tic-tac-toe example">
           <div>1</div>
           <div>2</div>
           <div>3</div>
@@ -35,6 +38,6 @@ export default function TicTacToe() {
           />
         </CodeWrapper>
       </section>
-    </>
+    </article>
   );
 }

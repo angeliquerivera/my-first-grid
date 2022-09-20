@@ -1,19 +1,11 @@
-/* p {
-  background-color: darkmagenta;
+.example {
+  background-color: indigo;
 }
-
-h1 + p {
-  background-color: aqua;
-}
-
-p ~ p {
-  background-color: darkorange;
-} */
 
 .true-center {
   display: grid;
-  height: 10rem;
   place-items: center;
+  height: 10rem;
   font-size: 3rem;
 }
 
@@ -43,4 +35,23 @@ p ~ p {
   place-items: center;
   background-color: darkslategray;
   height: 100px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+.sidebar nav,
+.sidebar article {
+  padding: 1.5rem;
+  min-height: 400px;
+}
+
+.sidebar nav {
+  background-color: darkgreen;
+}
+
+.sidebar article {
+  background-color: palevioletred;
 }
