@@ -55,3 +55,24 @@
 .sidebar article {
   background-color: palevioletred;
 }
+
+.pancake {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.pancake > * {
+  padding: 0.5rem;
+}
+
+.pancake header {
+  background-color: blue;
+}
+
+.pancake div {
+  background-color: orchid;
+}
+
+.pancake footer {
+  background-color: limegreen;
+}
