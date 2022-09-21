@@ -24,7 +24,7 @@ export default function Eggplant() {
           <HighlightedCode
             exampleCode={eggplant_css}
             codeLang={"css"}
-            codeLabel={"Eggplant.css"}
+            codeLabel={"eggplant.css"}
           />
         </CodeWrapper>
       </section>

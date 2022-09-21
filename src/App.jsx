@@ -4,6 +4,7 @@ import TicTacToe from "./components/sections/TicTacToe";
 import MixedColumns from "./components/sections/MixedColumns";
 import Sidebar from "./components/sections/Sidebar";
 import Pancake from "./components/sections/Pancake";
+import RepeatMultipleTracks from "./components/sections/RepeatMultipleTracks";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Eggplant />
       <TicTacToe />
+      <RepeatMultipleTracks />
       <MixedColumns />
       <Sidebar />
       <Pancake />

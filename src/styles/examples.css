@@ -1,7 +1,9 @@
 .example {
   background-color: indigo;
 }
-
+/*******************************
+ * Eggplant.jsx
+ ******************************/
 .true-center {
   display: grid;
   place-items: center;
@@ -9,8 +11,12 @@
   font-size: 3rem;
 }
 
+/*******************************
+ * TicTacToe.jsx
+ ******************************/
 .tic-tac-toe {
   display: grid;
+  height: 600px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
@@ -18,12 +24,32 @@
 
 .tic-tac-toe div {
   background-color: darkred;
-  height: 200px;
 
   display: grid;
   place-items: center;
 }
 
+/*******************************
+ * RepeatedMultipleTracks.jsx
+ ******************************/
+.multiple-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr 2fr);
+  gap: 0.5rem;
+}
+
+.multiple-tracks div {
+  display: grid;
+  place-items: center;
+
+  background-color: mediumturquoise;
+  color: black;
+  height: 100px;
+}
+
+/*******************************
+ * MixedColumns.jsx
+ ******************************/
 .mixed-columns {
   display: grid;
   grid-template-columns: 100px 25% 1fr 2fr;
@@ -37,6 +63,9 @@
   height: 100px;
 }
 
+/*******************************
+ * Sidebar.jsx
+ ******************************/
 .sidebar {
   display: grid;
   grid-template-columns: minmax(150px, 25%) 1fr;
@@ -56,6 +85,9 @@
   background-color: palevioletred;
 }
 
+/*******************************
+ * Pancake.jsx
+ ******************************/
 .pancake {
   display: grid;
   grid-template-rows: auto 1fr auto;
