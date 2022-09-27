@@ -176,3 +176,27 @@
   grid-column: span 4;
   grid-row: 3 / span 2;
 }
+
+/*******************************
+ * SpansOnly.jsx
+ ******************************/
+
+.spans-only {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  height: 600px;
+}
+
+.skinny {
+  background-color: royalblue;
+  color: black;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.thicc {
+  background-color: darkcyan;
+  grid-column: span 2;
+  grid-row: span 2;
+}
