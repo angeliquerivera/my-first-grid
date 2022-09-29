@@ -7,6 +7,8 @@ import Pancake from "./components/sections/Pancake";
 import RepeatMultipleTracks from "./components/sections/RepeatMultipleTracks";
 import VisualLines from "./components/sections/VisualLines";
 import SpansOnly from "./components/sections/SpansOnly";
+import SingleLineNames from "./components/sections/SingleLineNames";
+import GridAreaNames from "./components/sections/GridAreaNames";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
       <Pancake />
       <VisualLines />
       <SpansOnly />
+      <SingleLineNames />
+      <GridAreaNames />
     </main>
   );
 }

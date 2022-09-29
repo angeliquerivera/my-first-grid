@@ -184,8 +184,14 @@
 .spans-only {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-
+  grid-template-rows: repeat(6, 1fr);
+  grid-auto-flow: row;
   height: 600px;
+}
+
+.spans-only div {
+  display: grid;
+  place-items: center;
 }
 
 .skinny {
@@ -199,4 +205,87 @@
   background-color: darkcyan;
   grid-column: span 2;
   grid-row: span 2;
+}
+
+/*******************************
+* SingleLineNames.jsx
+******************************/
+
+/* .single-line-name {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 500px;
+  gap: 0.5rem;
+}
+
+.single-line-name div {
+  background-color: black;
+}
+
+div.special {
+  background-color: springgreen;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+} */
+
+.single-line-name {
+  display: grid;
+  grid-template-columns: repeat(5, [c-start] 1fr [c-end]);
+  grid-template-rows: repeat(5, [r-start] 1fr [r-end]);
+  height: 1000px;
+  gap: 0.5rem;
+}
+
+.single-line-name div {
+  background-color: black;
+}
+
+div.special {
+  background-color: springgreen;
+  grid-column: c-start 2 / c-end 4;
+  grid-row: r-start 2 / r-end 4;
+}
+
+/*******************************
+* GridAreaNames.jsx
+******************************/
+.grid-area-names {
+  display: grid;
+  height: 600px;
+  grid-template-areas:
+    "....    header  header"
+    "content content sidebar"
+    "footer  footer  footer";
+  grid-template-columns: 1fr 1fr 200px;
+  grid-template-rows: auto 1fr 50px;
+  gap: 0.5rem;
+
+  /* header 3 across
+  content 2 > sidebar 1
+  footer 3 */
+}
+.grid-area-names div {
+  display: grid;
+  place-items: center;
+}
+
+.area-header {
+  border: 2px solid pink;
+  grid-area: header;
+}
+
+.area-content {
+  border: 2px solid khaki;
+  grid-area: content;
+}
+
+.area-sidebar {
+  border: 2px solid teal;
+  grid-area: sidebar;
+}
+
+.area-footer {
+  border: 2px solid crimson;
+  grid-area: footer;
 }

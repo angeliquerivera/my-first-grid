@@ -8,22 +8,22 @@ export default function SpansOnly() {
         <article className="spans-only">
           {/* 6 cols wide, 2 rows tall */}
 
-          <div className="skinny"> grid-column: span 1; grid-row: span 2;</div>
-          <div className="thicc"> grid-column: span 2; grid-row: span 2;</div>
-          <div className="skinny"> grid-column: span 1; grid-row: span 2;</div>
-          <div className="thicc"> grid-column: span 2; grid-row: span 2;</div>
+          <div className="skinny">1</div>
+          <div className="thicc">2</div>
+          <div className="skinny">3</div>
+          <div className="thicc">4</div>
 
           {/* 6 cols wide, 2 rows tall */}
-          <div className="thicc"> grid-column: span 2; grid-row: span 2;</div>
-          <div className="skinny"> grid-column: span 1; grid-row: span 2;</div>
-          <div className="skinny"> grid-column: span 1; grid-row: span 2;</div>
-          <div className="thicc"> grid-column: span 2; grid-row: span 2;</div>
+          <div className="thicc">5</div>
+          <div className="skinny">6</div>
+          <div className="skinny">7</div>
+          <div className="thicc">8</div>
 
           {/* NOT 6 columns */}
-          <div className="thicc">thicc</div>
-          <div className="skinny">skinny</div>
-          <div className="thicc">thicc</div>
-          <div className="thicc">thicc</div>
+          <div className="thicc">9</div>
+          <div className="skinny">10</div>
+          <div className="thicc">11</div>
+          <div className="thicc">12</div>
         </article>
       </section>
     </article>
