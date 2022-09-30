@@ -97,7 +97,7 @@
 .p-5 {
   background-color: gold;
   grid-column: 5 / 6;
-  grid-row: inherit;
+  grid-row: span 5;
 }
 
 .p-6 {
