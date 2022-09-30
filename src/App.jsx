@@ -11,6 +11,7 @@ import SingleLineNames from "./components/sections/SingleLineNames";
 import GridAreaNames from "./components/sections/GridAreaNames";
 import ThreeByThree from "./components/practice-grids/ThreeByThree";
 import Staircase from "./components/practice-grids/Staircase";
+import Pyramid from "./components/practice-grids/Pyramid";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
       <GridAreaNames />
       <ThreeByThree />
       <Staircase />
+      <Pyramid />
     </main>
   );
 }
