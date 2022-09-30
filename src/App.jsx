@@ -10,6 +10,7 @@ import SpansOnly from "./components/sections/SpansOnly";
 import SingleLineNames from "./components/sections/SingleLineNames";
 import GridAreaNames from "./components/sections/GridAreaNames";
 import ThreeByThree from "./components/practice-grids/ThreeByThree";
+import Staircase from "./components/practice-grids/Staircase";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <SingleLineNames />
       <GridAreaNames />
       <ThreeByThree />
+      <Staircase />
     </main>
   );
 }
