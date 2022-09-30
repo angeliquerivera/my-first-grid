@@ -1,0 +1,12 @@
+.three-by-three {
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+.three-by-three div {
+  background-color: sienna;
+  display: grid;
+  place-items: center;
+}

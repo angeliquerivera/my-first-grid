@@ -9,6 +9,7 @@ import VisualLines from "./components/sections/VisualLines";
 import SpansOnly from "./components/sections/SpansOnly";
 import SingleLineNames from "./components/sections/SingleLineNames";
 import GridAreaNames from "./components/sections/GridAreaNames";
+import ThreeByThree from "./components/practice-grids/ThreeByThree";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <SpansOnly />
       <SingleLineNames />
       <GridAreaNames />
+      <ThreeByThree />
     </main>
   );
 }
