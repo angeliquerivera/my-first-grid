@@ -291,13 +291,13 @@ div.special {
 }
 
 /*******************************
-* ImplicitLineNames.jsx
+* ImplicitGridAreas.jsx
 ******************************/
 .implicit-names {
-  display: grid;
   height: 400px;
-  grid-template-rows: [a-start] 1fr [b-start] 1fr [b-end] 1fr [a-end];
+  display: grid;
   grid-template-columns: [c-start] 1fr [d-start] 1fr [d-end] 1fr [c-end];
+  grid-template-rows: [a-start] 1fr [b-start] 1fr [b-end] 1fr [a-end];
   gap: 1rem;
 }
 
@@ -310,4 +310,43 @@ div.special {
 div.implicit-area {
   background-color: green;
   grid-area: b / d;
+}
+
+/*******************************
+* ImplicitLineNames.jsx
+******************************/
+.explicit-name-areas {
+  display: grid;
+  grid-template-areas:
+    "header  header"
+    "content sidebar"
+    "footer  footer";
+  grid-template-rows: 5rem 1fr 3rem;
+  grid-template-columns: 1fr 10rem;
+  gap: 2rem;
+}
+
+.implicit-header {
+  background-color: palegreen;
+  color: black;
+  grid-row: header-start / content-end;
+  grid-column: header-start / header-end;
+}
+
+.implicit-content {
+  background-color: cadetblue;
+  grid-row: content-start / content-end;
+  grid-column: content-start / content-end;
+}
+
+.implicit-sidebar {
+  background-color: mediumvioletred;
+  grid-row: sidebar-start / sidebar-end;
+  grid-column: sidebar-start / sidebar-end;
+}
+
+.implicit-footer {
+  background-color: mediumpurple;
+  grid-row: footer-start / footer-end;
+  grid-column: footer-start / footer-end;
 }

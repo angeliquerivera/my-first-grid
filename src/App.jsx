@@ -10,6 +10,7 @@ import SpansOnly from "./components/sections/SpansOnly";
 import SingleLineNames from "./components/sections/SingleLineNames";
 import GridAreaNames from "./components/sections/GridAreaNames";
 import ImplicitLineNames from "./components/sections/ImplicitLineNames";
+import ImplicitGridAreas from "./components/sections/ImplicitGridAreas";
 import ThreeByThree from "./components/practice-grids/ThreeByThree";
 import Staircase from "./components/practice-grids/Staircase";
 import Pyramid from "./components/practice-grids/Pyramid";
@@ -29,6 +30,7 @@ export default function App() {
       <SingleLineNames />
       <GridAreaNames />
       <ImplicitLineNames />
+      <ImplicitGridAreas />
       <hr />
       <ThreeByThree />
       <Staircase />
