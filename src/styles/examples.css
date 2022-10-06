@@ -329,7 +329,7 @@ div.implicit-area {
 .implicit-header {
   background-color: palegreen;
   color: black;
-  grid-row: header-start / content-end;
+  grid-row: header-start / header-end;
   grid-column: header-start / header-end;
 }
 
@@ -349,4 +349,40 @@ div.implicit-area {
   background-color: mediumpurple;
   grid-row: footer-start / footer-end;
   grid-column: footer-start / footer-end;
+}
+
+/*******************************
+* LayeringGridItems.jsx
+******************************/
+.layered-items {
+  display: grid;
+  height: 600px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.layered-items div {
+  background-color: steelblue;
+  display: grid;
+  place-items: center;
+}
+
+#overlay {
+  z-index: 2;
+  background-color: rgba(255, 0, 132, 1);
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+
+#pos1 {
+  z-index: 1;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#pos2 {
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
 }

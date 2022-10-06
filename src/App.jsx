@@ -14,6 +14,7 @@ import ImplicitGridAreas from "./components/sections/ImplicitGridAreas";
 import ThreeByThree from "./components/practice-grids/ThreeByThree";
 import Staircase from "./components/practice-grids/Staircase";
 import Pyramid from "./components/practice-grids/Pyramid";
+import LayeringGridItems from "./components/sections/LayeringGridItems";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
       <GridAreaNames />
       <ImplicitLineNames />
       <ImplicitGridAreas />
+      <LayeringGridItems />
       <hr />
       <ThreeByThree />
       <Staircase />
