@@ -17,6 +17,7 @@ import Staircase from "./components/practice-grids/Staircase";
 import Pyramid from "./components/practice-grids/Pyramid";
 import SquareTarget from "./components/practice-grids/SquareTarget";
 import Spiral from "./components/practice-grids/Spiral";
+import SquareKnot from "./components/practice-grids/SquareKnot";
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
       <Pyramid />
       <SquareTarget />
       <Spiral />
+      <SquareKnot />
     </main>
   );
 }
