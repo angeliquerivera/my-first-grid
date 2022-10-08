@@ -134,3 +134,60 @@ div.bullseye {
   grid-column: 3;
   grid-row: 3;
 }
+
+.spiral {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.spiral div {
+  background-color: orchid;
+}
+
+div.spiral-left-side {
+  grid-column: 1;
+  grid-row: span 7;
+}
+
+div.spiral-top {
+  grid-column: span 8;
+  grid-row: 1;
+}
+
+div.spiral-right-side {
+  grid-column: 8;
+  grid-row: span 6;
+}
+
+div.inner-top {
+  grid-column: 3 / span 3;
+  grid-row: 3;
+}
+
+div.inner-left {
+  grid-column: 3;
+  grid-row: 3 / span 4;
+}
+
+div.inner-right {
+  grid-column: 6;
+  grid-row: 3 / span 3;
+}
+
+div.curl {
+  grid-column: 5;
+  grid-row: 5;
+}
+
+div.inner-bottom {
+  grid-column: 3 / span 5;
+  grid-row: 7;
+}
+
+div.spiral-bottom {
+  grid-column: span 9;
+  grid-row: 9;
+}

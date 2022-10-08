@@ -16,6 +16,7 @@ import ThreeByThree from "./components/practice-grids/ThreeByThree";
 import Staircase from "./components/practice-grids/Staircase";
 import Pyramid from "./components/practice-grids/Pyramid";
 import SquareTarget from "./components/practice-grids/SquareTarget";
+import Spiral from "./components/practice-grids/Spiral";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
       <Staircase />
       <Pyramid />
       <SquareTarget />
+      <Spiral />
     </main>
   );
 }
