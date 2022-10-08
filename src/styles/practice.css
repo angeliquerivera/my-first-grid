@@ -102,10 +102,35 @@
   display: grid;
   height: 400px;
   width: 400px;
-  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .target div {
   background-color: darkred;
+}
+
+div.target-left-wall {
+  grid-column: 1;
+  grid-row: span 5;
+}
+
+div.target-ceiling {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+}
+
+div.target-right-wall {
+  grid-column: 5;
+  grid-row: span 5;
+}
+
+div.target-floor {
+  grid-column: 2 / span 3;
+  grid-row: 5;
+}
+
+div.bullseye {
+  grid-column: 3;
+  grid-row: 3;
 }
