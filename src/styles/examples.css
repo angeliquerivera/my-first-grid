@@ -386,3 +386,30 @@ div.implicit-area {
   grid-column: 2;
   grid-row: 1;
 }
+
+/*******************************
+* Subgrid.jsx
+******************************/
+footer.mdn-footer {
+  width: 600px;
+}
+
+.mdn-footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.site-footer__item {
+  grid-row: span 2;
+
+  display: grid;
+  grid-template-rows: subgrid;
+  gap: 0.5rem;
+}
+
+/* .site-footer__item h3 {
+  grid-row: 1;
+}
+.site-footer__item ul {
+  grid-row: 2;
+} */
