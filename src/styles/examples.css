@@ -406,10 +406,3 @@ footer.mdn-footer {
   grid-template-rows: subgrid;
   gap: 0.5rem;
 }
-
-/* .site-footer__item h3 {
-  grid-row: 1;
-}
-.site-footer__item ul {
-  grid-row: 2;
-} */
